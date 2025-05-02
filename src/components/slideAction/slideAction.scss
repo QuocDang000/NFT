@@ -1,0 +1,128 @@
+.nft-collections .slide-action {
+  height: 245px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 85px;
+    width: 40px;
+    height: 40px;
+    background: #383a42;
+    border-radius: 12px;
+    z-index: 10;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px 16px;
+    }
+  }
+
+  .swiper-button-next {
+    right: 236px;
+
+    &::after {
+      background-image: url("/src/assets/icons/next.svg");
+    }
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 282px;
+
+    &::after {
+      background-image: url("/src/assets/icons/prev.svg");
+    }
+  }
+}
+
+.nft-drops-calendar .slide-action {
+  height: 240px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 464px;
+    width: 40px;
+    height: 40px;
+    background: #383a42;
+    border-radius: 12px;
+    z-index: 10;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px 16px;
+    }
+  }
+
+  .swiper-button-next {
+    left: 50%;
+    transform: translateX(-50%) translateX(-43px);
+
+    &::after {
+      background-image: url("/src/assets/icons/next.svg");
+    }
+  }
+
+  .swiper-button-prev {
+    left: 50%;
+    transform: translateX(-50%) translateX(-90px);
+
+    &::after {
+      background-image: url("/src/assets/icons/prev.svg");
+    }
+  }
+}
+
+.hot-nft .slide-action {
+  height: 240px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+  }
+}
+
+.promotion .slide-action {
+  height: 240px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+  }
+}

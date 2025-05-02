@@ -1,0 +1,68 @@
+.footer {
+  background-color: #131415;
+  padding: 40px 236px;
+  color: #fff;
+  font-family: sans-serif;
+  border-top: 1px solid #383a42;
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-column {
+    h4 {
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+        color: #ffffff;
+
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          transition: color 0.2s;
+
+          &:hover {
+            color: #ffc700;
+          }
+        }
+      }
+    }
+
+    &.contact {
+      ul li {
+        color: #ffffff;
+      }
+
+      .install-app {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          display: block;
+          width: 152px;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
