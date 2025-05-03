@@ -16,9 +16,7 @@ export const useNavbar = () => {
   const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
 
   const getMenuIcon = () =>
-    isMobileMenuOpen
-      ? "/src/assets/icons/close_navbar.svg"
-      : "/src/assets/icons/open_navbar.svg";
+    isMobileMenuOpen ? "/icons/close_navbar.svg" : "/icons/open_navbar.svg";
 
   return {
     activeIndex,

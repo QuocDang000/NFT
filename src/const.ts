@@ -2,56 +2,56 @@ export const NAV_ITEMS = ["HOME", "ITEMS1", "ITEMS2", "ITEMS3", "ITEMS4"];
 
 export const FEATURES = [
   {
-    icon: "/src/assets/icons/free_to_earn.svg",
+    icon: "/icons/free_to_earn.svg",
     label: "FREE TO EARN",
   },
   {
-    icon: "/src/assets/icons/rank.svg",
+    icon: "/icons/rank.svg",
     label: "RANKING",
   },
   {
-    icon: "/src/assets/icons/video.svg",
+    icon: "/icons/video.svg",
     label: "VIDEO-NFT",
   },
   {
-    icon: "/src/assets/icons/how_to_buy.svg",
+    icon: "/icons/how_to_buy.svg",
     label: "HOW TO BUY",
   },
   {
-    icon: "/src/assets/icons/new_nfts.svg",
+    icon: "/icons/new_nfts.svg",
     label: "NEW NFTS",
     badge: "NEW",
   },
   {
-    icon: "/src/assets/icons/roadmap.svg",
+    icon: "/icons/roadmap.svg",
     label: "ROADMAPS",
   },
 ];
 
 export const FEATURES_MOBILE = [
   {
-    icon: "/src/assets/icons/free_to_earn_sm.svg",
+    icon: "/icons/free_to_earn_sm.svg",
     label: "FREE TO EARN",
   },
   {
-    icon: "/src/assets/icons/rank_sm.svg",
+    icon: "/icons/rank_sm.svg",
     label: "RANKING",
   },
   {
-    icon: "/src/assets/icons/video_sm.svg",
+    icon: "/icons/video_sm.svg",
     label: "VIDEO-NFT",
   },
   {
-    icon: "/src/assets/icons/how_to_buy_sm.svg",
+    icon: "/icons/how_to_buy_sm.svg",
     label: "HOW TO BUY",
   },
   {
-    icon: "/src/assets/icons/new_nfts_sm.svg",
+    icon: "/icons/new_nfts_sm.svg",
     label: "NEW NFTS",
     badge: "NEW",
   },
   {
-    icon: "/src/assets/icons/roadmap_sm.svg",
+    icon: "/icons/roadmap_sm.svg",
     label: "ROADMAPS",
   },
 ];

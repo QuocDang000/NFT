@@ -37,7 +37,7 @@
     right: 236px;
 
     &::after {
-      background-image: url("/src/assets/icons/next.svg");
+      background-image: url("/icons/next.svg");
     }
   }
 
@@ -46,7 +46,7 @@
     right: 282px;
 
     &::after {
-      background-image: url("/src/assets/icons/prev.svg");
+      background-image: url("/icons/prev.svg");
     }
   }
 }
@@ -89,7 +89,7 @@
     transform: translateX(-50%) translateX(-43px);
 
     &::after {
-      background-image: url("/src/assets/icons/next.svg");
+      background-image: url("/icons/next.svg");
     }
   }
 
@@ -98,7 +98,7 @@
     transform: translateX(-50%) translateX(-90px);
 
     &::after {
-      background-image: url("/src/assets/icons/prev.svg");
+      background-image: url("/icons/prev.svg");
     }
   }
 }

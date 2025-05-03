@@ -1,12 +1,10 @@
-import React from "react";
-
 import { NAV_ITEMS } from "@/const";
 
 import { useNavbar } from "./useNavbar";
 
 import "./navbar.scss";
 
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
   const {
     activeIndex,
     isMobileMenuOpen,
@@ -24,7 +22,7 @@ export const Navbar: React.FC = () => {
         </button>
 
         <a href="/#" className="logo-link">
-          <img src="/src/assets/logo.svg" alt="Logo" className="logo" />
+          <img src="/logo/logo.svg" alt="Logo" className="logo" />
         </a>
 
         <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
