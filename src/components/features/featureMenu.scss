@@ -1,3 +1,5 @@
+@import "../../styles/main";
+
 .feature-menu {
   display: flex;
   justify-content: space-between;
@@ -10,7 +12,7 @@
 
 .feature-item {
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 12px;
   position: relative;
 }
@@ -34,9 +36,36 @@
   top: -6px;
   right: -10px;
   background-color: red;
-  color: white;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 500;
   padding: 2px 5px;
   border-radius: 4px;
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .feature-menu {
+    padding: 15px 16px;
+    line-height: 13px;
+  }
+
+  .feature-item {
+    font-size: 10px;
+  }
+
+  .badge {
+    font-size: 5.33px;
+    right: -4px;
+  }
+
+  .icon-wrapper {
+    width: unset;
+    height: unset;
+  }
+
+  .icon-wrapper img {
+    width: unset;
+    height: unset;
+  }
 }

@@ -4,13 +4,12 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "./slide.scss";
+import "./slideAuto.scss";
 
 export const Slide = ({ slideImages }: { slideImages: string[] }) => {
   return (
     <Swiper
       className="slide-img"
-      lazy={{ loadPrevNext: true }}
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop={true}

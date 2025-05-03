@@ -1,5 +1,15 @@
+@import "../../../styles/main";
+
 .nft-container {
   display: flex;
   gap: 24px;
   margin-top: 80px;
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .nft-container {
+    margin-top: 40px;
+    display: block;
+  }
 }

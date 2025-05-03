@@ -9,7 +9,7 @@ export const HotNFT = () => {
   return (
     <div className="hot-nft">
       <Title text="HOT NFT" />
-      <SlideAction slideImages={HOT_NFT} slidesPerLargeView={1} />
+      <SlideAction slideImages={HOT_NFT} />
     </div>
   );
 };

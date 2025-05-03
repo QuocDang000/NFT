@@ -1,3 +1,5 @@
+@import "../../styles/main";
+
 .content {
   background: #131415;
   padding: 80px 236px;
@@ -5,5 +7,12 @@
 
   .swiper {
     position: unset;
+  }
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .content {
+    padding: 40px 20px;
   }
 }

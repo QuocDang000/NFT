@@ -1,15 +1,19 @@
+import { useIsMobile } from "@/utils/useIsMobile";
+
 import { FeatureMenu } from "@/components/features/FeatureMenu";
-import { Slide } from "@/components/slide/Slide";
+import { Slide } from "@/components/slideAuto/SlideAuto";
 
 import { Content } from "@/layout/content";
 
-import { FEATURES, SLIDE_IMAGES_NAVBAR } from "@/const";
+import { FEATURES, FEATURES_MOBILE, SLIDE_IMAGES_NAVBAR } from "@/const";
 
 export const HomePage: React.FC = () => {
+  const isMobile = useIsMobile();
+
   return (
     <>
       <Slide slideImages={SLIDE_IMAGES_NAVBAR} />
-      <FeatureMenu features={FEATURES} />
+      <FeatureMenu features={isMobile ? FEATURES_MOBILE : FEATURES} />
       <Content />
     </>
   );

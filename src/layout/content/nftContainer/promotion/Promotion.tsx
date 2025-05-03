@@ -9,7 +9,7 @@ export const Promtion = () => {
   return (
     <div className="promotion">
       <Title text="PROMOTION" />
-      <SlideAction slideImages={PROMOTION} slidesPerLargeView={1} />
+      <SlideAction slideImages={PROMOTION} />
     </div>
   );
 };

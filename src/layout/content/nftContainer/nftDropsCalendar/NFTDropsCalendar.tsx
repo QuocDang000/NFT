@@ -9,7 +9,7 @@ export const NFTDropsCalendar = () => {
   return (
     <div className="nft-drops-calendar">
       <Title text="NFT Drops Calendar" />
-      <SlideAction slideImages={NFT_DROP_CALENDARS} slidesPerLargeView={1} />
+      <SlideAction slideImages={NFT_DROP_CALENDARS} />
     </div>
   );
 };

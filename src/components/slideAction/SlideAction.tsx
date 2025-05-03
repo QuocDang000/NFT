@@ -8,18 +8,23 @@ import "./slideAction.scss";
 
 export const SlideAction = ({
   slideImages,
-  slidesPerLargeView,
+  slidesPerLargeView = 1,
+  slidesPerSmallView = 1,
 }: {
   slideImages: string[];
-  slidesPerLargeView: number;
+  slidesPerLargeView?: number;
+  slidesPerSmallView?: number;
 }) => {
   return (
     <Swiper
       slidesPerView={1}
       spaceBetween={10}
-      lazy={true}
       navigation={true}
       breakpoints={{
+        360: {
+          slidesPerView: slidesPerSmallView,
+          spaceBetween: 8,
+        },
         640: {
           slidesPerView: 2,
           spaceBetween: 20,

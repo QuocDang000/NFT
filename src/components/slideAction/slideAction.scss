@@ -1,3 +1,5 @@
+@import "../../styles/main";
+
 .nft-collections .slide-action {
   height: 245px;
 
@@ -124,5 +126,87 @@
     object-fit: cover;
     object-position: center;
     border-radius: 12px;
+  }
+}
+
+.nft-container__content {
+  display: contents;
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .content {
+    padding: 40px 20px;
+  }
+
+  .nft-collections {
+    .slide-action {
+      height: unset;
+
+      img {
+        height: 140px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 32px;
+        height: 32px;
+        top: 40px;
+      }
+
+      .swiper-button-next {
+        right: 20px;
+      }
+
+      .swiper-button-prev {
+        right: 58px;
+      }
+    }
+  }
+
+  .nft-drops-calendar {
+    .slide-action {
+      height: unset;
+
+      img {
+        width: 100%;
+        height: 171px;
+        object-fit: unset;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 32px;
+        height: 32px;
+        top: 256px;
+      }
+
+      .swiper-button-next {
+        left: 102%;
+      }
+
+      .swiper-button-prev {
+        left: 104.5%;
+      }
+    }
+  }
+
+  .hot-nft,
+  .promotion {
+    margin-top: 40px;
+
+    .slide-action img {
+      height: 167px;
+    }
+  }
+
+  .nft-container__content {
+    display: flex;
+    gap: 16px;
+  }
+
+  .hot-nft .slide-action,
+  .promotion .slide-action {
+    height: unset;
   }
 }

@@ -1,0 +1,19 @@
+// Define common device widths
+$breakpoint-mobile-sm: 480px;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-laptop: 1200px;
+$breakpoint-desktop: 1400px;
+
+// Mixin for media queries
+@mixin respond-max($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin respond-min($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

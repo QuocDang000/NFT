@@ -1,39 +1,55 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+
+import { NAV_ITEMS } from "@/const";
+
+import { useNavbar } from "./useNavbar";
 
 import "./navbar.scss";
 
 export const Navbar: React.FC = () => {
-  const navigate = useNavigate();
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
-  const navItems = ["HOME", "ITEMS1", "ITEMS2", "ITEMS3", "ITEMS4"];
+  const {
+    activeIndex,
+    isMobileMenuOpen,
+    handleNavClick,
+    handleNavigate,
+    toggleMobileMenu,
+    getMenuIcon,
+  } = useNavbar();
 
   return (
     <nav className="navbar">
       <div className="navbar-left">
+        <button className="menu-toggle" onClick={toggleMobileMenu}>
+          <img src={getMenuIcon()} alt={isMobileMenuOpen ? "Close" : "Open"} />
+        </button>
+
         <a href="/#" className="logo-link">
           <img src="/src/assets/logo.svg" alt="Logo" className="logo" />
         </a>
-        <ul className="nav-links">
-          {navItems.map((item, index) => (
+
+        <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
+          {NAV_ITEMS.map((item, index) => (
             <li
               key={index}
               className={activeIndex === index ? "active" : ""}
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
+              onClick={() => handleNavClick(index)}
             >
               <a href={`/#${item.toLowerCase()}`} className="nav-link">
-                {item}
+                {item.replace("ITEMS", "ITEMS ")}
               </a>
             </li>
           ))}
         </ul>
       </div>
+
       <div className="navbar-right">
-        <button className="btn-signup" onClick={() => navigate("/signup")}>
+        <button
+          className="btn-signup"
+          onClick={() => handleNavigate("/signup")}
+        >
           SIGN UP
         </button>
-        <button className="btn-login" onClick={() => navigate("/login")}>
+        <button className="btn-login" onClick={() => handleNavigate("/login")}>
           LOG IN
         </button>
       </div>

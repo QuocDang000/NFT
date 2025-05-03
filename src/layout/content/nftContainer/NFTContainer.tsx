@@ -8,8 +8,10 @@ export const NFTContainer = () => {
   return (
     <div className="nft-container">
       <NFTDropsCalendar />
-      <HotNFT />
-      <Promtion />
+      <div className="nft-container__content">
+        <HotNFT />
+        <Promtion />
+      </div>
     </div>
   );
 };

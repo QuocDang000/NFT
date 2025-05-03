@@ -1,3 +1,5 @@
+@import "../../styles/main";
+
 .title {
   font-weight: 900;
   font-style: italic;
@@ -6,4 +8,12 @@
   text-transform: uppercase;
   color: #ffc700;
   margin-bottom: 8px;
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .title {
+    font-size: 16px;
+    line-height: 32px;
+  }
 }

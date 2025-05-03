@@ -1,3 +1,5 @@
+@import "../../styles/main";
+
 .footer {
   background-color: #131415;
   padding: 40px 236px;
@@ -31,11 +33,11 @@
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 8px;
-        color: #ffffff;
+        color: #d2d2d2;
 
         a {
           text-decoration: none;
-          color: #ffffff;
+          color: #d2d2d2;
           transition: color 0.2s;
 
           &:hover {
@@ -47,7 +49,7 @@
 
     &.contact {
       ul li {
-        color: #ffffff;
+        color: #d2d2d2;
       }
 
       .install-app {
@@ -63,6 +65,25 @@
           cursor: pointer;
         }
       }
+    }
+  }
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .footer {
+    padding: 40px 20px;
+
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-column.contact .install-app {
+      margin-top: 20px;
+    }
+
+    .footer-column ul li a {
+      font-size: 12px;
     }
   }
 }

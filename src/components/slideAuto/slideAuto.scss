@@ -1,8 +1,11 @@
+@import "../../styles/main";
+
 .slide-img {
   margin-top: 80px;
 
   .swiper-wrapper {
     transition: 0.8s ease-out !important;
+    background-color: #131415;
   }
 
   .swiper-pagination-bullet {
@@ -22,5 +25,16 @@
     height: 450px;
     object-fit: cover;
     object-position: center;
+  }
+}
+
+/* ========== MOBILE STYLES ========== */
+@include respond-max($breakpoint-mobile-sm) {
+  .slide-img {
+    margin-top: 60px;
+
+    .swiper-slide img {
+      height: 180px;
+    }
   }
 }
