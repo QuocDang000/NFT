@@ -9,17 +9,17 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 12px;
+    border-radius: $border-radius;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
     top: 85px;
-    width: 40px;
-    height: 40px;
+    width: $swiper-button-size;
+    height: $swiper-button-size;
     background: #383a42;
-    border-radius: 12px;
+    border-radius: $border-radius;
     z-index: 10;
 
     &::after {
@@ -60,17 +60,17 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 12px;
+    border-radius: $border-radius;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
     top: 464px;
-    width: 40px;
-    height: 40px;
+    width: $swiper-button-size;
+    height: $swiper-button-size;
     background: #383a42;
-    border-radius: 12px;
+    border-radius: $border-radius;
     z-index: 10;
 
     &::after {
@@ -112,7 +112,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 12px;
+    border-radius: $border-radius;
   }
 }
 
@@ -125,7 +125,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 12px;
+    border-radius: $border-radius;
   }
 }
 
@@ -149,8 +149,8 @@
 
       .swiper-button-next,
       .swiper-button-prev {
-        width: 32px;
-        height: 32px;
+        width: $swiper-button-mobile-size;
+        height: $swiper-button-mobile-size;
         top: 40px;
       }
 
@@ -176,8 +176,8 @@
 
       .swiper-button-next,
       .swiper-button-prev {
-        width: 32px;
-        height: 32px;
+        width: $swiper-button-mobile-size;
+        height: $swiper-button-mobile-size;
         top: 256px;
       }
 
@@ -202,7 +202,7 @@
 
   .nft-container__content {
     display: flex;
-    gap: 16px;
+    gap: $gap-mobile;
   }
 
   .hot-nft .slide-action,

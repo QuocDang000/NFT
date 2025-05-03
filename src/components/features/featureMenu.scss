@@ -12,7 +12,7 @@
 
 .feature-item {
   text-align: center;
-  color: #ffffff;
+  color: $color-white;
   font-size: 12px;
   position: relative;
 }
@@ -36,7 +36,7 @@
   top: -6px;
   right: -10px;
   background-color: red;
-  color: #ffffff;
+  color: $color-white;
   font-size: 12px;
   font-weight: 500;
   padding: 2px 5px;

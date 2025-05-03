@@ -1,11 +1,14 @@
 // Colors
-$primary-color: #ffc700;
-$secondary-color: #222;
-$text-color: #ffffff;
-$background-color: #131415;
+$color-background: #383a42;
+$color-white: #ffffff;
+$color-black: #131415;
+$color-highlight: #ffc700;
 
-// Fonts
-$font-family: "Inter", sans-serif;
+// Dimensions
+$border-radius: 12px;
+$swiper-button-size: 40px;
+$swiper-button-mobile-size: 32px;
 
-// Radius
-$border-radius: 100px;
+// Spacing
+$padding-content-mobile: 40px 20px;
+$gap-mobile: 16px;
