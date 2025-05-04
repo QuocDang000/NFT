@@ -24,31 +24,67 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactDom from "eslint-plugin-react-dom";
+import reactX from "eslint-plugin-react-x";
 
 export default tseslint.config({
   plugins: {
     // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
+    "react-x": reactX,
+    "react-dom": reactDom,
   },
   rules: {
     // other rules...
     // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
+    ...reactX.configs["recommended-typescript"].rules,
     ...reactDom.configs.recommended.rules,
   },
-})
+});
 ```
+
+# NFT WEB
+
+## Installation
+
+1. Install NVM
+2. Install Node version 18 via NVM
+3. Install project dependencies via
+
+   ```
+   npm install
+   ```
+
+4. Start project on localhost with dev mode
+   npm run dev
+5. Go to http://locahost:5173
+
+# Technologies:
+
+- Javscript
+- ReactJS version 19
+- Typescript
+- SCSS
+- Swiper
+
+# Link demo: https://nft-pi-tan.vercel.app/
+
+# Demo:
+
+![Demo_NFT](/src/assets/demo_web1.png)
+![Demo_NFT](/src/assets/demo_web2.png)
+![Demo_NFT](/src/assets/demo_web3.png)
+![Demo_NFT](/src/assets/demo_mobile1.jpg)
+![Demo_NFT](/src/assets/demo_mobile2.jpg)
+![Demo_NFT](/src/assets/demo_mobile3.jpg)
+![Demo_NFT](/src/assets/demo_mobile4.jpg)
